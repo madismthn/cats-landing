@@ -1,0 +1,562 @@
+/* ----------------------- CSS-RESET start --------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* ----------------------- CSS-RESET end --------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1600px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background: url(/images/header-bg.jpeg) no-repeat center / cover;
+  color: #fff;
+  padding: 25px 0 65px;
+}
+
+.header_top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.header_logo {
+  margin-right: 120px;
+}
+
+.header_logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.header_nav a {
+  color: #fff;
+  font-weight: 300;
+}
+
+.header_nav a:hover {
+  color: #6ebbd3;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.header_number {
+  text-align: right;
+  font-weight: 300;
+}
+
+.header_number_digits {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.header_bottom {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+/* ----------------------- Header end --------------------- */
+
+/* ----------------------- Main start --------------------- */
+
+.content {
+  margin-bottom: 80px;
+}
+
+.buy-at-once {
+  position: fixed;
+  right: calc((100vw - 1600px) / 2);
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  max-width: 300px;
+  padding: 30px;
+  background-color: #6ebbd3;
+  opacity: 0.5;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.buy-at-once a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buy-at-once:hover {
+  background-color: #6ebbd3;
+  opacity: 1;
+  color: white;
+}
+
+.content_buttons {
+  padding: 35px 0 35px;
+}
+
+.content_buttons span {
+  font-weight: 800;
+  margin-right: 50px;
+}
+
+.content_button {
+  position: relative;
+  margin-right: 50px;
+  padding-right: 30px;
+  font-weight: 300;
+}
+
+.content_button::after {
+  content: url(/images/Vector.png);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  /* top: 3px; */
+  right: 0;
+}
+
+.content_inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 40px;
+  margin-bottom: 68px;
+}
+
+.content_show_btn {
+  grid-column: 2 / 3;
+}
+.content_show {
+  max-width: 380px;
+  padding: 25px 130px;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.content_show:hover {
+  background-color: #cacaca;
+  color: white;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+}
+
+.content_show:active {
+  background-color: #6ebbd3;
+}
+
+/* ----------------------- Card start --------------------- */
+
+.card {
+  position: relative;
+  width: 380px;
+}
+
+.card_image img {
+  width: 100%;
+  background-size: cover;
+}
+
+.card_inner {
+  padding: 30px;
+  background-color: #e5e5e5;
+}
+
+.card_inner:hover {
+  background-color: #f2f2f2;
+}
+
+.card_title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.card_info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-left: 4px solid #6ebbd3;
+  padding-left: 15px;
+}
+
+.card_color {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+.card_age,
+.card_foots {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.card_age div,
+.card_foots div {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+.card_price {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.card_button {
+  width: 100%;
+  text-align: center;
+  padding: 20px 55px;
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card .buy {
+  background-color: #6ebbd3;
+}
+
+.card .buy:hover {
+  background-color: #1c91b5;
+}
+.card .sold {
+  background-color: #1f2021;
+}
+
+.like {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  border-radius: 10px;
+  background: url(/images/like.png) no-repeat;
+  width: 46px;
+  height: 41px;
+  opacity: 0.5;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.like:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.liked {
+  position: absolute;
+  background-image: url(/images/like.png);
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 41px;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+}
+
+.sale {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #e52d2d;
+  top: 35px;
+  left: 35px;
+  border-radius: 10px;
+}
+
+.sale:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+/* ----------------------- Card end --------------------- */
+/* ----------------------- Main end --------------------- */
+
+/* ----------------------- Footer start --------------------- */
+
+.footer {
+  background-color: #1f2021;
+  color: #fff;
+}
+
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 85px 80px;
+}
+.footer_title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.footer_text {
+  max-width: 300px;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.footer_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer_input input {
+  width: 300px;
+  margin-right: 15px;
+  padding: 22px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.footer_input input:focus {
+  transform: scale(1.05);
+}
+.footer_input input::placeholder {
+  color: #000;
+}
+.footer_input button {
+  padding: 20px 75px;
+  border-radius: 10px;
+  background-color: #6ebbd3;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+.footer_input button:focus {
+  transform: scale(1.05);
+  background-color: #1c91b5;
+}
+.footer_input button:hover {
+  background-color: #1c91b5;
+}
+.footer_checkbox {
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer_checkbox input {
+  margin-right: 20px;
+}
+
+/* ----------------------- Buy at once start --------------------- */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: calc(100vh - 228.5px);
+  width: 100vw;
+  background-color: #626262;
+  background: url(../images/Save.jpeg) no-repeat;
+  background-size: cover;
+}
+
+.form {
+  max-width: 1000px;
+  height: auto;
+  padding: 100px;
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 100px;
+  box-shadow: 0px 0px 20px rgb(31, 31, 31, 0.4);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+.descr-header {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  font-weight: 500;
+}
+
+.descr-content {
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+.descr-content p {
+  padding: 7px 0;
+}
+
+.form-header {
+  text-align: center;
+  padding: 70px 0 50px 0;
+  color: white;
+  font-weight: normal;
+}
+
+.form-data {
+  width: max-content;
+  margin: 0 auto;
+}
+
+form input {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-bottom: 1px solid #6ebbd3;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e5e5e5;
+  z-index: 1;
+}
+
+.form-input:focus + .form-label {
+  top: -18px;
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #6ebbd3;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  background-color: #ffffff;
+  color: #6ebbd3;
+}
+
+.country {
+  padding: 20px 0 40px 0;
+  color: #e3e3e3;
+}
+
+.form-country {
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.form-country-group {
+  margin: 10px 0;
+}
+
+.form-country-group input[type="radio"] {
+  display: none;
+}
+
+.checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #e0e0e0;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 40px rgb(255, 255, 255);
+}
+
+input[type="radio"]:checked + .checkbox-label::before {
+  background-color: #6ebbd3;
+  box-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+/* ----------------------- Buy at once end --------------------- */

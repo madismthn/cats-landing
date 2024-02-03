@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save a cat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_top">
+          <div class="header_logo">
+            <a href="/" class="logo-link"
+              ><img src="/images/logo.png" alt="Logo"
+            /></a>
+          </div>
+
+          <nav>
+            <ul class="header_nav">
+              <li class="header_link"><a href="#">Main</a></li>
+              <li class="header_link"><a href="#">Gallery</a></li>
+              <li class="header_link"><a href="#">News</a></li>
+              <li class="header_link"><a href="#">Profile</a></li>
+            </ul>
+          </nav>
+
+          <div class="header_number">
+            <div class="header_number_digits">+544 3490 00000</div>
+            <div>Звони скорее!</div>
+          </div>
+        </div>
+        <div class="header_bottom">Найдено 349 котов</div>
+      </div>
+    </header>
+    <div class="form-container">
+      <form class="form">
+        <div class="form-descr">
+          <h1 class="descr-header">Спасите кошку!</h1>
+          <div class="descr-content">
+            <p>
+              Кошки - это всегда отличное вложение денег. А если вы хотите
+              сэкономить и сделать доброе дело, можно взять кошку бесплатно.
+            </p>
+            <p>Заполните данную форму и спасите одну четвероногую жизнь!</p>
+          </div>
+        </div>
+        <h1 class="form-header">Заполните форму</h1>
+        <div class="form-data">
+          <div class="form-group">
+            <input
+              class="form-input"
+              id="lastName"
+              name="lastName"
+              type="text"
+            />
+            <label for="lastName" class="form-label">Фамилия</label>
+          </div>
+          <div class="form-group">
+            <input
+              class="form-input"
+              id="firstName"
+              name="firstName"
+              type="text"
+            />
+            <label for="firstName" class="form-label">Имя</label>
+          </div>
+          <div class="form-group">
+            <input class="form-input" id="email" name="email" type="email" />
+            <label for="email" class="form-label">Email</label>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber" class="form-label">Телефон</label>
+            <input id="phoneNumber" name="phone-number" type="tel" />
+          </div>
+          <div class="country">
+            <div class="form-country">Страна:</div>
+            <div class="form-country-group">
+              <input
+                id="ru"
+                type="radio"
+                name="citizen"
+                value="russia"
+                checked
+              />
+              <label for="ru" class="checkbox-label">Россия</label>
+            </div>
+            <div class="form-country-group">
+              <input id="bs" type="radio" name="citizen" value="russia" />
+              <label for="bs" class="checkbox-label">Беларусь</label>
+            </div>
+            <div class="form-country-group">
+              <input id="other" type="radio" name="citizen" value="russia" />
+              <label for="other" class="checkbox-label">Другая страна</label>
+            </div>
+          </div>
+          <button class="submit-btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
